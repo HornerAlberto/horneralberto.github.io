@@ -64,10 +64,10 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/horneralberto/"
     - label: "LinkedIn"
-      icon: "fa-solid fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/alberto-d-horner/"
     - label: "CV"
-      icon: "fab fa-fw fa-file"
+      icon: "fa-solid fa-file"
       url: /assets/files/cv.pdf
       external: true
 
