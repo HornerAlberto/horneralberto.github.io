@@ -62,14 +62,23 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/horneralberto/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alberto-d-horner/"
+    - label: "CV"
+      icon: "fab fa-solid fa-file"
+      url: /assets/files/cv.pdf
+      external: true
 
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-
+      url: "https://github.com/horneralberto/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alberto-d-horner/"
 defaults:
   # _posts
   - scope:
