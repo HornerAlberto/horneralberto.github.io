@@ -29,7 +29,7 @@ which can be mapped to three kinds of questions. The first kind is associative k
 with our marketing campaign? The second kind is interventional knowledge: what if we relaunch the campaign? Will it yield the same results? The third kind is counterfactual: what would have happened if we hadn’t launched that campaign? Would sales have increased anyway? The second and third levels can only be reached using causal reasoning (or simulating it), and that is the kind of information that managers really want to have.
 
 
-![LadderOfCausation](assets\images\2024-12-27\the-ladder-of-causation.png)
+![LadderOfCausation](assets/images/the-ladder-of-causation.png)
 
 *The Ladder of Causation. A drawing by Maayan Harel.*
 
@@ -51,7 +51,7 @@ Let’s dive deeper into the previous example. Ideally, a good marketing campaig
 
 You may wonder why a mere plot of sales and revenue before and after the marketing campaign won’t work. Usually, business decisions are not taken in isolation. Around the same lapse of time, the pricing team may have changed their strategy, and the engineers may have come up with a more ergonomic design. It is possible to discover that the last two caused the increase in sales, and not the first one. A causal diagram of the situation looks as follows:
 
-![Example Graph](assets\images\2024-12-27\the-ladder-of-causation.png)
+![Example Graph](assets\images\the-ladder-of-causation.png)
 
 That would mean that the marketing campaign needs a change and that, at least for this hypothetical company, it will be better to focus efforts on design and pricing. While performing the analysis, your team may discover insightful relations among variables, like the role of customer satisfaction as a mediator between the quality of the product’s design and the number of sales (look at the diagram). Furthermore, your causal model will enable you to answer questions like ‘what is the best way to allocate our budget to maximize sales?’ Obviously, assuming that budget allocation has a causal effect on design improvement and pricing optimization. Achieving those results is feasible with the current state of causal AI.
 
