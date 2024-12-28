@@ -57,13 +57,7 @@ plugins:
 author:
   name   : "Alberto D. Horner"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Data Engineer with a strong background on AI. I also play the role of DevOps Engineer and administer a
-            private repository for data ingestion and data management. The National Council for Humanities, Science and
-            Technology granted me a research scholarship to pursue my Master’s degree. I focused my research on Causal AI.
-            After my undergraduate studies on Philosophy, I undertook a shift towards engineering, due to the conclusion
-            that such is the best way I can contribute to society. I am convinced that humans, collectively, can become even
-            smarter, and solve a lot of urgent problems (environmental, political, industrial, health problems, etc.), with an
-            adequate use of technology and keeping in mind that there are some riddles that are better unraveled by
+  bio    : "Data Engineer with research experience on Causal AI. Some riddles are better unraveled by
             inlcuding causality in our reasonings."
   links:
     - label: "GitHub"
