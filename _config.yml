@@ -64,7 +64,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/horneralberto/"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
+      icon: "fa-solid fa-linkedin"
       url: "https://www.linkedin.com/in/alberto-d-horner/"
     - label: "CV"
       icon: "fab fa-fw fa-file"
