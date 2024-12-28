@@ -2,6 +2,6 @@ main:
   - title: "Posts"
     url: /posts/
   - title: "CV"
-    url: /cv/
+    url: /assets/files/cv.pdf
   - title: "Home"
     url: /
