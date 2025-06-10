@@ -57,8 +57,7 @@ plugins:
 author:
   name   : "Alberto D. Horner"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Data Engineer with research experience on Causal AI. Some riddles are better unraveled by
-            inlcuding causality in our reasonings."
+  bio    : "Data Engineer with research experience on Causal AI. I contribute biweekly at the causalpython.io newsletter."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
