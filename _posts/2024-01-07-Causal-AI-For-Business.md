@@ -1,5 +1,6 @@
 ---
 title: "Causal AI for Business: the next breakthrough"
+date: 2024-01-07T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
