@@ -16,7 +16,7 @@
 title: Causal Reasoning and Data Engineering
 email: dohalberto at gmail dot com
 description: >- # this means to ignore newlines until "baseurl:"
-  Alberto Dominguez Horner. Causal Inference | Data Engineering | Philosophy of Statistics
+  Alberto Dominguez Horner. Causal Inference | AI Engineering | Philosophy of Statistics
 github_username: HornerAlberto
 minimal_mistakes_skin: default
 search: true
@@ -57,7 +57,7 @@ plugins:
 author:
   name   : "Alberto D. Horner"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Data Engineer with research experience on Causal AI. I contribute biweekly at the causalpython.io newsletter."
+  bio    : "AI Engineer with research experience in Causal AI and a biweekly contributor to the causalpython.io newsletter."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
