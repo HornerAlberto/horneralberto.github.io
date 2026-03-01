@@ -6,6 +6,10 @@ categories:
   - Blog
 ---
 ![PEHE-barplot](/assets/images/20260111PEHE-plot.png)
+
+*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
+*Sign up and get up-to-date coverage of Causal AI for free.*
+
 In-context learning is an emergent property of foundation models that raised a lot of excitement when it first became to known.
 
 In simple terms, it allows a model to learn from the data and context available at inference time.
