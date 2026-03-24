@@ -1,10 +1,11 @@
 ---
 title: "Counterfactual Fairness: take as much as you can"
-date: 2026-22-08T00:00:00-00:00
+date: 2026-03-22T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
 ---
+
 ![counterfactual-fariness-model](/assets/images/20260321-CounterfactualFairness-StandardFairnessModel.png)
 
 *Originally published in* [*Causal Python weekly*](https://causalpython.io/).
