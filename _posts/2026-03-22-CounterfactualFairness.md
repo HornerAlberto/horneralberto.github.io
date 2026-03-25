@@ -12,6 +12,7 @@ categories:
 *Sign up and get up-to-date coverage of Causal AI for free.*
 
 **Counterfactual Fairness**
+
 In fairness research we often talk about so-called sensitive attributes.
 
 Two popular examples are gender and race.
