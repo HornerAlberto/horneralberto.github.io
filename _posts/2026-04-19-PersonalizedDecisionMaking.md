@@ -19,8 +19,7 @@ A growing field of study within causal inference is personalized decision-making
 
 While population-based decision-making concerns a subpopulation resembling a given individual, this area of study includes your individual beliefs and priorities as part of the analysis, that is, what matters particularly to you.
 
-Personalized decision-making focuses on Individual Treatment Effects (ITEs), which are measured by the difference between control and treatment outcomes for a given individual.
-
+Personalized decision-making focuses on Individual Treatment Effects (ITEs), defined as the difference between an individual’s outcomes under two alternative interventions, such as treatment and control.
 
 Two important caveats for ITEs are:
 
