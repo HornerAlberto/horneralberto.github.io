@@ -30,6 +30,6 @@ In fact, the probability of error when using triplets is always less than or equ
 
 The code is not currently available, but the authors promised to add it soon [here](https://pjvglb.clicks.mlsend.com/td/cl/eyJ2Ijoie1wiYVwiOjUxNjI1MSxcImxcIjoxNTI4NTQzMTI2Njc1ODAwNjIsXCJyXCI6MTUyODU0MzgwNzQ1MzI3ODY4fSIsInMiOiI1MjJkOTEyM2Y5M2Q5MzNjIn0).
 
-![Explore the paper](https://pjvglb.clicks.mlsend.com/td/cl/eyJ2Ijoie1wiYVwiOjUxNjI1MSxcImxcIjoxNTI4NTQzMTI2NzgwNjU4MjUsXCJyXCI6MTUyODU0MzgwNzQ1MzI3ODY4fSIsInMiOiJkNjExZTAwYzY1ZGMxNjJhIn0)
+[Explore the paper](https://pjvglb.clicks.mlsend.com/td/cl/eyJ2Ijoie1wiYVwiOjUxNjI1MSxcImxcIjoxNTI4NTQzMTI2NzgwNjU4MjUsXCJyXCI6MTUyODU0MzgwNzQ1MzI3ODY4fSIsInMiOiJkNjExZTAwYzY1ZGMxNjJhIn0)
 
 *Written by Alberto D. Horner*
