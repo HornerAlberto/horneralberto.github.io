@@ -6,7 +6,7 @@ categories:
   - Blog
 ---
 
-![causal-order-diagram](/assets/images/20250427-CausalOrder1.png)
+![causal-order-diagram](/assets/images/20260427CausalOrder1.png)
 
 *Originally published in* [*Causal Python weekly*](https://causalpython.io/).
 *Sign up and get up-to-date coverage of Causal AI for free.*
