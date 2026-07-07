@@ -15,7 +15,7 @@ categories:
 
 To say that Causal Inference is being underutilized in the biggest area of the AI industry is not a statement that could be passed inadvertently. And that is exactly the case.
 
-In a brand-new KDD paper, an interdisciplinary group (LMU Munich, Carnegie Mellon, Imperial College London, and University of Toronto) presents where, how and why the opportunity to leverage causal methods can be found in the Large Language Models (LLMs) development and evaluation lifecycle.
+In a brand-new KDD paper, an interdisciplinary group (*LMU Munich, Carnegie Mellon, Imperial College London*, and *University of Toronto*) presents where, how and why the opportunity to leverage causal methods can be found in the Large Language Models (LLMs) development and evaluation lifecycle.
 
 Most decisions within the LLM lifecycle can be better framed as treatments.
 
@@ -30,7 +30,7 @@ In addition to that, most logged data that comes from LLM apps is biased.
 
 Think about a router that sends more complex queries to higher reasoning LLMs. Based on outcomes, it could seem that the strongest LLM is performing worse than a distilled or lighter one.
 
-Causal methods could help you debias your data, and even more. You can answer a variety of questions such as whether the data you have is enough to ground up a confident decision, something that causal inference traditionally calls identifiability.
+Causal methods could help you debias your data, and even more. You can answer a variety of questions such as whether the data you have is enough to ground up a confident decision, something that causal inference traditionally calls *identifiability*.
 
 You will find a clarifying note at the beginning of the paper: the intersection of causal reasoning and LLMs has been explored regarding how LLMs could be equipped with causal reasoning abilities.
 
