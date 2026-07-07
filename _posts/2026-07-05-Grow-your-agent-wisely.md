@@ -6,7 +6,7 @@ categories:
   - Blog
 ---
 
-![causal-llm-development](/assets/images/20260705-CausalLLMDevelopment.png)
+![causal-llm-development](/assets/images/20260705-CausalLLMDevelopmentNeon.png)
 
 *Originally published in* [*Causal Python weekly*](https://causalpython.io/).
 *Sign up and get up-to-date coverage of Causal AI for free.*
@@ -18,6 +18,9 @@ To say that Causal Inference is being underutilized in the biggest area of the A
 In a brand-new KDD paper, an interdisciplinary group (LMU Munich, Carnegie Mellon, Imperial College London, and University of Toronto) presents where, how and why the opportunity to leverage causal methods can be found in the Large Language Models (LLMs) development and evaluation lifecycle.
 
 Most decisions within the LLM lifecycle can be better framed as treatments.
+
+
+![causal-llm-development](/assets/images/20260705-CausalLLMDevelopment.png)
 
 **Where to apply it**
 
