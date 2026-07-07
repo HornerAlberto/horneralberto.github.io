@@ -50,5 +50,7 @@ The authors present clear examples regarding pre-training, evaluation, retrieval
 
 Changing chunking strategy, lowering temperature, prompt engineering, increasing some domain weights during pretraining are all treatments linked to outcomes such as model performance, user preference or retrieval relevance.
 
+[Explore the paper](https://arxiv.org/abs/2605.25998)
+
 *Written by Alberto D. Horner*
 
