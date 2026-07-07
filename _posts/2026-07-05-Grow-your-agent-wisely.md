@@ -38,11 +38,11 @@ What we have here is a novel approach: how could causal inference add value to L
 
 **Enriching for a variety of roles**
 
-Based on that perspective, this article could be enriching for a variety of personas: business owners, project managers, engineers, researchers and salesmen.
+Based on that perspective, this paper could be enriching for a variety of personas: business owners, project managers, engineers, researchers and salesmen.
 
 A stakeholder can know how much value is being created with a feature improvement. Developers will discover a whole new horizon to improve their models and align them to the expected task at hand.
 
-The article explicitly flags research opportunities that allow researchers to focus on one problem and contribute to this area; from a research standpoint, this is just the beginning.
+The paper explicitly flags research opportunities that allow researchers to focus on one problem and contribute to this area; from a research standpoint, this is just the beginning.
 
 Salesmen, on the other hand, will find a powerful tool to frame value propositions and ROI measurements that will enable them to build trust and long-term value for their clients.
 
