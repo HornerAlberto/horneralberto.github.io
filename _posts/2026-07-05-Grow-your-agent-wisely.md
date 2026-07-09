@@ -13,7 +13,7 @@ categories:
 
 **The opportunity to leverage Causal Inference for LLM development**
 
-To say that Causal Inference is being underutilized in the biggest area of the AI industry is not a statement that could be passed inadvertently. And that is exactly the case.
+To say that Causal Inference is underutilized in the biggest area of the AI industry is not a statement that could be passed inadvertently. And that is exactly the case.
 
 In a brand-new KDD paper, an interdisciplinary group (*LMU Munich, Carnegie Mellon, Imperial College London*, and *University of Toronto*) presents where, how and why the opportunity to leverage causal methods can be found in the Large Language Models (LLMs) development and evaluation lifecycle.
 
