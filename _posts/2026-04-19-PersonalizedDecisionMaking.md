@@ -4,12 +4,16 @@ date: 2026-04-19T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - safe
+causal_python: true
 ---
 
-![p-harm-p-benefit](/assets/images/20260419-PersonalizedDecisionMaking.png)
+<figure>
+{% include diagrams/twin-network.svg %}
+<figcaption>Harm as a counterfactual event: an undesired outcome <em>Y</em> under treatment <em>X</em> (solid) that would not have been observed without the treatment (dashed).</figcaption>
+</figure>
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 
 

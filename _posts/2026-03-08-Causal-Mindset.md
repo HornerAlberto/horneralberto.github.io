@@ -4,11 +4,12 @@ date: 2026-03-08T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - super
+causal_python: true
 ---
 ![causal-mindset-book](/assets/images/20260308-Causal-mindset.jpg)
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 A brand-new book on causality just landed!
 

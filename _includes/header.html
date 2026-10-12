@@ -1,0 +1,11 @@
+<header class="site-header wrap">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    {% include monogram.svg %}
+    <span>{{ site.title | escape }}</span>
+  </a>
+  <nav aria-label="Main">
+    {% for item in site.data.navigation.main %}
+    <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>

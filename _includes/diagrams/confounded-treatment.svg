@@ -1,0 +1,14 @@
+<svg class="dag" viewBox="0 0 360 145" width="360" height="145" role="img" aria-label="Causal diagram: the prompt affects both the treatment and the outcome, and the treatment affects the outcome.">
+  <defs>
+    <marker id="conf-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="head" d="M0 1.5 10 5 0 8.5z"/></marker>
+  </defs>
+  <path class="edge" marker-end="url(#conf-head)" d="M172.5 35 67.5 105"/>
+  <path class="edge" marker-end="url(#conf-head)" d="M187.5 35 292.5 105"/>
+  <path class="edge" marker-end="url(#conf-head)" d="M69 110H291"/>
+  <circle class="node" cx="180" cy="30" r="4.5"/>
+  <circle class="node" cx="60" cy="110" r="4.5"/>
+  <circle class="node" cx="300" cy="110" r="4.5"/>
+  <text x="180" y="15" text-anchor="middle">PROMPT</text>
+  <text x="60" y="134" text-anchor="middle">TREATMENT</text>
+  <text x="300" y="134" text-anchor="middle">OUTCOME</text>
+</svg>

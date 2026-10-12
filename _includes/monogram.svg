@@ -1,0 +1,7 @@
+<svg class="monogram" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <path class="edge" d="M9.96 12.16 14.04 20.84"/>
+  <path class="edge edge--cf" d="M22.04 12.16 17.96 20.84"/>
+  <circle class="node" cx="8" cy="8" r="3.2"/>
+  <circle class="node" cx="24" cy="8" r="3.2"/>
+  <circle class="node" cx="16" cy="25" r="3.2"/>
+</svg>

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1 class="hero">{{ site.tagline }}</h1>
+
+<section class="thesis">
+{{ content }}
+  <figure>
+    {% include diagrams/twin-network.svg %}
+    <figcaption>A twin network. The factual world (solid) and the world that didn’t happen (dashed) share the same background conditions <em>U</em>.</figcaption>
+  </figure>
+</section>
+
+<h2 class="label">Writing</h2>
+<ul class="posts">
+  {% for post in site.posts limit: 6 %}
+  {% include post-item.html post=post format="%b %Y" %}
+  {% endfor %}
+</ul>
+<p class="more"><a href="{{ '/posts/' | relative_url }}">All writing →</a></p>
+
+<h2 class="label">About</h2>
+<p>{{ site.author.bio }}</p>
+<ul class="links">
+  {% for link in site.author.links %}
+  <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+  {% endfor %}
+</ul>
