@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .node { fill: #1C1B19; }
+    .edge { fill: none; stroke: #2B4C7E; stroke-width: 2; stroke-linecap: round; }
+    .cf { stroke: #9A4A3A; stroke-dasharray: 2.4 2.4; }
+    @media (prefers-color-scheme: dark) {
+      .node { fill: #ECE9E2; }
+      .edge { stroke: #93B3E2; }
+      .cf { stroke: #DB8F7D; }
+    }
+  </style>
+  <path class="edge" d="M9.96 12.16 14.04 20.84"/>
+  <path class="edge cf" d="M22.04 12.16 17.96 20.84"/>
+  <circle class="node" cx="8" cy="8" r="3.6"/>
+  <circle class="node" cx="24" cy="8" r="3.6"/>
+  <circle class="node" cx="16" cy="25" r="3.6"/>
+</svg>

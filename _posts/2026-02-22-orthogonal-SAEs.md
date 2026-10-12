@@ -4,12 +4,13 @@ date: 2026-02-22T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - safe
+causal_python: true
 ---
 ![Othogonal-SAEs-metrics](/assets/images/LLMsInterventionFigure20260222.png)
 
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 When it comes to knowing what is going on inside a Large Language Model (LLM), Sparse Autoencoders (SAEs) are popular mechanisms that can discover features in the model’s representation space. This makes models more interpretable.
 

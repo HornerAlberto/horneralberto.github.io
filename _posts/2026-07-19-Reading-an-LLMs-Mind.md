@@ -1,15 +1,16 @@
 ---
 title: "Reading an LLM's Mind with Causal Effects"
-date: 2026-07-05T00:00:00-00:00
+date: 2026-07-19T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - safe
+causal_python: true
 ---
 
 ![causal-j-space](/assets/images/20260719-CausalJSpace.png)
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 The internal **causal mechanisms** of Large Language Models (LLMs) are in the spotlight.
 

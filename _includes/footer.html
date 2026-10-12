@@ -1,0 +1,9 @@
+<footer class="site-footer wrap">
+  <span>© {{ site.time | date: "%Y" }} {{ site.author.name | escape }}</span>
+  <ul>
+    {% for link in site.author.links %}
+    <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+    {% endfor %}
+    <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+  </ul>
+</footer>

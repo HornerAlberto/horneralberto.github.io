@@ -4,12 +4,13 @@ date: 2026-03-22T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - safe
+causal_python: true
 ---
 
 ![counterfactual-fariness-model](/assets/images/20260321-CounterfactualFairness-StandardFairnessModel.png)
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 **Counterfactual Fairness**
 

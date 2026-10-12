@@ -1,8 +1,5 @@
 main:
-  - title: "Home"
-    url: /
-  - title: "Posts"
+  - title: "Writing"
     url: /posts/
   - title: "CV"
     url: /assets/files/cv.pdf
-    external: true

@@ -1,0 +1,20 @@
+<svg class="dag" viewBox="0 0 360 150" width="360" height="150" role="img" aria-label="Twin network: X causes Y in the factual world, X′ causes Y′ in the counterfactual world, and both outcomes share the background conditions U.">
+  <defs>
+    <marker id="twin-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="head" d="M0 1.5 10 5 0 8.5z"/></marker>
+    <marker id="twin-head-cf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="head head--cf" d="M0 1.5 10 5 0 8.5z"/></marker>
+  </defs>
+  <path class="edge" marker-end="url(#twin-head)" d="M69 35H291"/>
+  <path class="edge" marker-end="url(#twin-head)" d="M188.5 72.2 291.5 37.8"/>
+  <path class="edge edge--cf" marker-end="url(#twin-head-cf)" d="M69 115H291"/>
+  <path class="edge edge--cf" marker-end="url(#twin-head-cf)" d="M188.5 77.8 291.5 112.2"/>
+  <circle class="node" cx="60" cy="35" r="4.5"/>
+  <circle class="node" cx="300" cy="35" r="4.5"/>
+  <circle class="node" cx="180" cy="75" r="4.5"/>
+  <circle class="node" cx="60" cy="115" r="4.5"/>
+  <circle class="node" cx="300" cy="115" r="4.5"/>
+  <text x="60" y="20" text-anchor="middle">X</text>
+  <text x="300" y="20" text-anchor="middle">Y</text>
+  <text x="161" y="79" text-anchor="middle">U</text>
+  <text x="60" y="140" text-anchor="middle">X′</text>
+  <text x="300" y="140" text-anchor="middle">Y′</text>
+</svg>

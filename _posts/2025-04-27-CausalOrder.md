@@ -4,12 +4,13 @@ date: 2025-04-27T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - super
+causal_python: true
 ---
 
 ![causal-order-diagram](/assets/images/20260427CausalOrder1.png)
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 
 Over the past few years, large language models (LLMs) have been increasingly gaining attention in the causal community as potential helpers in causal discovery, even though they’re not perfect experts.

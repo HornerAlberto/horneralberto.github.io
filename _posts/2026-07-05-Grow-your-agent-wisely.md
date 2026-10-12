@@ -4,12 +4,16 @@ date: 2026-07-05T00:00:00-00:00
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+tags:
+  - super
+causal_python: true
 ---
 
-![causal-llm-development](/assets/images/20260705-CausalLLMDevelopmentNeon.png)
+<figure>
+{% include diagrams/confounded-treatment.svg %}
+<figcaption>A decision in the LLM lifecycle framed as a treatment. The prompt influences both the treatment that is applied and the outcome.</figcaption>
+</figure>
 
-*Originally published in* [*Causal Python weekly*](https://causalpython.io/).
-*Sign up and get up-to-date coverage of Causal AI for free.*
 
 **The opportunity to leverage Causal Inference for LLM development**
 

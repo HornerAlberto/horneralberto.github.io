@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign minutes = content | strip_html | number_of_words | divided_by: 200 | at_least: 1 %}
+<article class="post">
+  <header class="post-header">
+    <p class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      · {{ minutes }} min read{% include tags.html tags=page.tags %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.causal_python %}
+    <p class="origin">Originally published in <a href="https://causalpython.io/">Causal Python weekly</a>. Sign up and get up-to-date coverage of Causal AI for free.</p>
+    {% endif %}
+  </header>
+  <div class="prose">
+{{ content }}
+  </div>
+  <footer class="post-footer">
+    <a href="{{ '/posts/' | relative_url }}">← All writing</a>
+  </footer>
+</article>

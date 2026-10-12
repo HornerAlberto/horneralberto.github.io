@@ -1,6 +1,5 @@
 ---
-title: "Posts"
+title: "Writing"
 permalink: /posts/
-layout: posts
-author_profile: true
+layout: archive
 ---
