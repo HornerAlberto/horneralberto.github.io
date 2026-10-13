@@ -8,6 +8,7 @@ github_username: HornerAlberto
 
 author:
   name: "Alberto D. Horner"
+  avatar: "/assets/images/bio-photo.jpg"
   bio: "AI Consultant with research experience in Causal AI and a biweekly contributor to the causalpython.io newsletter."
   links:
     - label: "GitHub"
