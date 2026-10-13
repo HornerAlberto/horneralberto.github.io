@@ -20,9 +20,14 @@ layout: default
 <p class="more"><a href="{{ '/posts/' | relative_url }}">All writing →</a></p>
 
 <h2 class="label">About</h2>
-<p>{{ site.author.bio }}</p>
-<ul class="links">
-  {% for link in site.author.links %}
-  <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
-  {% endfor %}
-</ul>
+<div class="about">
+  {% if site.author.avatar %}<img class="avatar" src="{{ site.author.avatar | relative_url }}" alt="Photo of {{ site.author.name }}" width="112" height="112">{% endif %}
+  <div>
+    <p>{{ site.author.bio }}</p>
+    <ul class="links">
+      {% for link in site.author.links %}
+      <li><a href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
