@@ -365,6 +365,16 @@ svg {
   letter-spacing: -0.018em;
 }
 
+.hero:has(+ .hero-note) {
+  margin-bottom: 0.6rem;
+}
+
+.hero-note {
+  margin: 0 0 2.75rem;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
 .thesis,
 blockquote {
   padding: 1.4rem 1.6rem;

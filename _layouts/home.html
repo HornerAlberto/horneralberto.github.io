@@ -2,6 +2,7 @@
 layout: default
 ---
 <h1 class="hero">{{ site.tagline }}</h1>
+{% if site.tagline_note %}<p class="hero-note">{{ site.tagline_note }}</p>{% endif %}
 
 <section class="thesis">
 {{ content }}
