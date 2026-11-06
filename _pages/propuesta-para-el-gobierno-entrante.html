@@ -1,0 +1,365 @@
+---
+layout: null
+title: "Un solo atacante con IA vulneró 9 instituciones en 7 semanas"
+permalink: /propuesta-para-el-gobierno-entrante/
+sitemap: false
+---
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Propuesta para el gobierno entrante · Ciberseguridad</title>
+<meta name="description" content="Un solo atacante con IA vulneró 9 instituciones en 7 semanas. El riesgo se hereda: los datos robados no caducan y los accesos ocultos pueden seguir activos.">
+<meta property="og:title" content="Un solo atacante con IA vulneró 9 instituciones en 7 semanas">
+<meta property="og:description" content="El riesgo se hereda: los datos robados no caducan y los accesos ocultos pueden seguir activos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap">
+<style>
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("{{ '/assets/fonts/source-serif-4-latin-600-normal.woff2' | relative_url }}") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("{{ '/assets/fonts/source-serif-4-latin-700-normal.woff2' | relative_url }}") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --ink: #1a1a1a;
+  --muted: #666;
+  --soft: #6e6e6e;
+  --card: #222;
+  --panel: #f1f1f1;
+  --serif: "Source Serif 4", Cambria, Georgia, serif;
+  --sans: "Segoe UI", "Open Sans", system-ui, -apple-system, sans-serif;
+  /* desktop: one unit = 1% of the viewport width, capped so it stays slide-like */
+  --u: min(1vw, 16px);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: #fff; color: var(--ink); font-family: var(--sans); line-height: 1.35; }
+
+.icon-m, .num, .eyebrow br { display: none; }
+
+/* ---------- Desktop (slide) ---------- */
+.page {
+  max-width: calc(100 * var(--u));
+  margin: 0 auto;
+  padding: calc(3.6 * var(--u)) calc(3.75 * var(--u)) calc(3 * var(--u));
+}
+.eyebrow {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: max(11px, calc(1.05 * var(--u)));
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+.eyebrow .dot { margin: 0 .9em; }
+h1 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: calc(3.1 * var(--u));
+  line-height: 1.15;
+  letter-spacing: -.005em;
+  margin-top: calc(1.6 * var(--u));
+}
+h1 br { display: none; }
+.lede {
+  font-size: calc(1.5 * var(--u));
+  margin-top: calc(1.1 * var(--u));
+  color: #222;
+}
+.stats {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: calc(1.8 * var(--u));
+  margin-top: calc(2.6 * var(--u));
+}
+.stat {
+  background: var(--card);
+  color: #fff;
+  border-radius: calc(.6 * var(--u));
+  padding: calc(1.2 * var(--u)) calc(1.7 * var(--u)) calc(1 * var(--u));
+}
+.stat b {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: calc(3.7 * var(--u));
+  line-height: 1.15;
+}
+.stat span {
+  display: block;
+  font-size: calc(1.25 * var(--u));
+  line-height: 1.3;
+  color: #eee;
+  margin-top: calc(.5 * var(--u));
+}
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(2 * var(--u));
+  margin-top: calc(2.4 * var(--u));
+}
+h2 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: calc(1.95 * var(--u));
+  line-height: 1.2;
+}
+.why ul { list-style: none; margin-top: calc(1.3 * var(--u)); }
+.why li {
+  display: grid;
+  grid-template-columns: calc(4.5 * var(--u)) 1fr;
+  gap: calc(1.5 * var(--u));
+  align-items: start;
+}
+.why li + li { margin-top: calc(1.55 * var(--u)); }
+.ico {
+  width: calc(4.5 * var(--u));
+  height: calc(4.5 * var(--u));
+  border-radius: 50%;
+  background: #2b2b2b;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.ico svg { width: 46%; height: 46%; }
+.why h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: calc(1.4 * var(--u));
+  line-height: 1.3;
+}
+.why p {
+  font-size: calc(1.3 * var(--u));
+  line-height: 1.38;
+  color: var(--muted);
+  margin-top: calc(.3 * var(--u));
+}
+.agenda ol { list-style: none; margin-top: calc(1.1 * var(--u)); }
+.step {
+  background: var(--panel);
+  border-radius: calc(.5 * var(--u));
+  display: grid;
+  grid-template-columns: calc(12.7 * var(--u)) 1fr;
+  align-items: center;
+  padding: calc(1.3 * var(--u)) calc(1.5 * var(--u));
+  min-height: calc(6.1 * var(--u));
+}
+.step + .step { margin-top: calc(.8 * var(--u)); }
+.when {
+  display: block;
+  font-weight: 700;
+  font-size: max(10px, calc(.95 * var(--u)));
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+.step h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: calc(1.7 * var(--u));
+  line-height: 1.25;
+  color: #222;
+}
+.step p {
+  font-size: calc(1.3 * var(--u));
+  line-height: 1.33;
+  color: #222;
+}
+.source {
+  margin-top: calc(2.3 * var(--u));
+  font-size: max(11px, calc(.9 * var(--u)));
+  line-height: 1.5;
+  color: var(--soft);
+}
+.source p + p { margin-top: calc(.3 * var(--u)); }
+.source a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.source a:hover { color: var(--ink); }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 760px) {
+  body { font-family: "Inter", system-ui, -apple-system, sans-serif; }
+  .page { max-width: none; padding: 0; }
+  .icon-d { display: none; }
+  .icon-m { display: block; }
+
+  .hero { background: #1c1c1c; color: #fff; padding: 46px 26px 30px; }
+  .eyebrow {
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    line-height: 1.5;
+    color: #bdbdbd;
+    display: flex;
+    flex-direction: column;
+  }
+  .eyebrow .dot { display: none; }
+  .eyebrow .e1 { order: 2; }
+  .eyebrow .e2 { order: 1; }
+  h1 {
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    margin-top: 10px;
+  }
+  h1 br { display: inline; }
+  .lede { font-size: 16px; line-height: 1.5; color: #d0d0d0; margin-top: 14px; }
+  .stats { grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 20px; }
+  .stat { background: #2f2f2f; border-radius: 14px; padding: 16px 15px 18px; }
+  .stat b { font-family: inherit; font-weight: 800; font-size: 36px; letter-spacing: -.02em; line-height: 1.1; }
+  .stat span { font-size: 13.5px; line-height: 1.45; color: #cfcfcf; margin-top: 14px; }
+
+  .cols { display: block; margin: 0; }
+  h2 { font-family: inherit; font-weight: 700; font-size: 22px; line-height: 1.25; letter-spacing: -.01em; }
+  .why { padding: 40px 26px 42px; }
+  .why ul { margin-top: 26px; }
+  .why li { grid-template-columns: 36px 1fr; gap: 26px; }
+  .why li + li { margin-top: 22px; }
+  .ico { width: 36px; height: 36px; background: #222; margin-top: 2px; }
+  .ico svg { width: 18px; height: 18px; }
+  .why h3 { font-family: inherit; font-size: 16px; font-weight: 700; line-height: 1.35; }
+  .why p { font-size: 15px; line-height: 1.5; color: #666; margin-top: 4px; }
+
+  .agenda { background: #efefef; padding: 40px 26px 34px; }
+  .agenda ol { margin-top: 24px; position: relative; }
+  .step {
+    display: block;
+    position: relative;
+    background: none;
+    min-height: 0;
+    padding: 0 0 0 49px;
+    border-radius: 0;
+  }
+  .step + .step { margin-top: 16px; }
+  .step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 16px; top: 34px; bottom: -16px;
+    width: 2px; background: #c9c9c9;
+  }
+  .num {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 0; top: 0;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: #1c1c1c; color: #fff;
+    font-size: 14px; font-weight: 700;
+  }
+  .card { background: #fff; border-radius: 14px; padding: 20px 20px 22px; }
+  .when { font-size: 11px; font-weight: 600; letter-spacing: .1em; color: #555; }
+  .step h3 { font-family: inherit; font-size: 22px; font-weight: 700; letter-spacing: -.01em; margin-top: 4px; color: #1a1a1a; }
+  .step p { font-size: 16px; line-height: 1.5; color: #2a2a2a; margin-top: 10px; }
+
+  .source { margin: 0; padding: 26px 26px 40px; font-size: 12px; line-height: 1.6; color: #777; }
+  .source p + p { margin-top: 10px; }
+}
+@media (min-width: 761px) {
+  .card { display: contents; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <p class="eyebrow"><span class="e1">Propuesta para el gobierno entrante</span><span class="dot">·</span><span class="e2">Ciberseguridad</span></p>
+    <h1>Un solo atacante con IA vulneró<br> 9 instituciones en<br> 7 semanas</h1>
+    <p class="lede">El riesgo se hereda: los datos robados no caducan y los accesos ocultos pueden seguir activos.</p>
+    <ul class="stats">
+      <li class="stat"><b>9</b><span>instituciones federales, estatales y municipales vulneradas</span></li>
+      <li class="stat"><b>195&nbsp;M</b><span>registros de contribuyentes extraídos del SAT</span></li>
+      <li class="stat"><b>220&nbsp;M</b><span>registros civiles extraídos del Registro Civil de la CDMX</span></li>
+      <li class="stat"><b>75&nbsp;%</b><span>de los comandos del ataque fueron ejecutados por IA</span></li>
+    </ul>
+  </header>
+
+  <div class="cols">
+    <section class="why">
+      <h2>Por qué sigue importando</h2>
+      <ul>
+        <li>
+          <span class="ico" aria-hidden="true">
+            <svg class="icon-d" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="7.2" r="3.4"/><circle cx="5" cy="9" r="2.4"/><circle cx="19" cy="9" r="2.4"/><path d="M5.8 19.5c0-3.6 2.7-6.2 6.2-6.2s6.2 2.6 6.2 6.2z"/><path d="M.6 18.3c0-2.6 1.9-4.4 4.4-4.4.9 0 1.7.2 2.3.6a7.6 7.6 0 0 0-2.4 3.8z"/><path d="M23.4 18.3c0-2.6-1.9-4.4-4.4-4.4-.9 0-1.7.2-2.3.6a7.6 7.6 0 0 1 2.4 3.8z"/></svg>
+            <svg class="icon-m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <div>
+            <h3>Datos de toda la población</h3>
+            <p>Padrón fiscal, registro civil, credenciales del INE y 17 mil expedientes de víctimas de violencia doméstica.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">
+            <svg class="icon-d" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5a3.6 3.6 0 0 1 3.6 3.6c0 2.2-1.3 2.9-1.3 4.6v3h4.4a2.3 2.3 0 0 1 2.3 2.3v2.6H3v-2.6a2.3 2.3 0 0 1 2.3-2.3h4.4v-3c0-1.7-1.3-2.4-1.3-4.6A3.6 3.6 0 0 1 12 1.5z"/><rect x="3" y="19.2" width="18" height="2.8" rx=".7"/></svg>
+            <svg class="icon-m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M19.27 13.73A2.5 2.5 0 0 0 17.5 13h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1.5c0-.66-.26-1.3-.73-1.77Z"/><path d="M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-3-3c-1.66 0-3 1-3 3s1 2 1 3.5V13"/></svg>
+          </span>
+          <div>
+            <h3>Confianza en documentos oficiales</h3>
+            <p>Un servicio emitía Constancias de Situación Fiscal falsas con datos reales consultados al SAT en vivo.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ico" aria-hidden="true">
+            <svg class="icon-d" viewBox="0 0 24 24"><g fill="currentColor"><rect x="1.5" y="2" width="21" height="5.6" rx="1.2"/><rect x="1.5" y="9.2" width="21" height="5.6" rx="1.2"/><rect x="1.5" y="16.4" width="21" height="5.6" rx="1.2"/></g><g fill="#2b2b2b"><circle cx="16.6" cy="4.8" r="1"/><circle cx="19.4" cy="4.8" r="1"/><circle cx="16.6" cy="12" r="1"/><circle cx="19.4" cy="12" r="1"/><circle cx="16.6" cy="19.2" r="1"/><circle cx="19.4" cy="19.2" r="1"/></g></svg>
+            <svg class="icon-m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+          </span>
+          <div>
+            <h3>Infraestructura crítica</h3>
+            <p>Control de toda la virtualización del Gobierno de Jalisco e intrusión en Agua y Drenaje de Monterrey.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="agenda">
+      <h2>Agenda para el gobierno entrante</h2>
+      <ol>
+        <li class="step">
+          <span class="num" aria-hidden="true">1</span>
+          <div class="card">
+            <div><span class="when">Transición</span><h3>Exigir</h3></div>
+            <p>Entrega-recepción con auditoría forense independiente y pruebas de remediación.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">2</span>
+          <div class="card">
+            <div><span class="when">Primeros 100 días</span><h3>Contener</h3></div>
+            <p>Asumir que el compromiso persiste: rotar credenciales y aislar sistemas sin soporte.</p>
+          </div>
+        </li>
+        <li class="step">
+          <span class="num" aria-hidden="true">3</span>
+          <div class="card">
+            <div><span class="when">Primer año</span><h3>Blindar</h3></div>
+            <p>Presupuesto para deuda técnica, equipo de respuesta y documentos verificables.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+
+  <footer class="source">
+    <p>Fuente: Gambit Security, <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">“The AI-Assisted Breach of Mexico’s Government Infrastructure”</a>, feb.&nbsp;2026. Campaña documentada: dic.&nbsp;2025 – feb.&nbsp;2026.</p>
+    <p>Cifras del reporte, sin verificación independiente; SAT, INE y Gobierno de Jalisco negaron públicamente haber sido vulnerados.</p>
+    <p>Gracias a mi colega Diego por compartirme este reporte.</p>
+  </footer>
+</main>
+</body>
+</html>
