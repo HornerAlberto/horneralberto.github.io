@@ -180,7 +180,7 @@ h2 {
   color: #222;
 }
 .source {
-  margin-top: calc(2.3 * var(--u));
+  margin-top: calc(4.2 * var(--u));
   font-size: max(11px, calc(.9 * var(--u)));
   line-height: 1.5;
   color: var(--soft);
@@ -188,9 +188,13 @@ h2 {
 .source p + p { margin-top: calc(.3 * var(--u)); }
 .source a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .source a:hover { color: var(--ink); }
-.source .cta { margin-bottom: calc(1 * var(--u)); font-weight: 600; color: var(--ink); }
-.source .cta .arrow { display: inline-block; font-size: 2.2em; line-height: 0; vertical-align: -.12em; margin-left: .3em; transition: transform .2s; }
-.source .cta a:hover .arrow { transform: translateX(4px); }
+.source .cta { margin-bottom: calc(1.4 * var(--u)); font-weight: 600; color: var(--ink); font-size: max(13px, calc(1.15 * var(--u))); }
+.source .cta a { text-decoration-thickness: 2px; }
+.page { position: relative; }
+.cta-arrow { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; color: var(--ink); }
+.cta-arrow path { fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.cta-arrow.draw .line { transition: stroke-dashoffset 1.1s ease-in-out; }
+.cta-arrow.draw .head { transition: opacity .25s 1s; }
 
 /* ---------- Mobile ---------- */
 @media (max-width: 760px) {
@@ -273,7 +277,8 @@ h2 {
 
   .source { margin: 0; padding: 26px 26px 40px; font-size: 12px; line-height: 1.6; color: #777; }
   .source p + p { margin-top: 10px; }
-  .source .cta { margin-bottom: 16px; font-size: 14px; color: #1a1a1a; }
+  .source .cta { margin: 6px 0 26px; padding-left: 49px; font-size: 15px; line-height: 1.45; color: #1a1a1a; }
+  .source .cta a { display: inline-block; margin-top: 2px; }
 }
 @media (min-width: 761px) {
   .card { display: contents; }
@@ -360,11 +365,71 @@ h2 {
   </div>
 
   <footer class="source">
-    <p class="cta">¿Quieres conocer todos los detalles? <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">Lee aquí el reporte técnico completo<span class="arrow" aria-hidden="true">→</span></a></p>
+    <p class="cta">¿Quieres conocer todos los detalles?<br> <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">Lee aquí el reporte técnico completo</a></p>
     <p>Fuente: Gambit Security, <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">“The AI-Assisted Breach of Mexico’s Government Infrastructure”</a>, feb.&nbsp;2026. Campaña documentada: dic.&nbsp;2025 – feb.&nbsp;2026.</p>
     <p>Cifras del reporte, sin verificación independiente; SAT, INE y Gobierno de Jalisco negaron públicamente haber sido vulnerados.</p>
     <p>Gracias a mi colega Diego por compartirme este reporte.</p>
   </footer>
+  <svg class="cta-arrow" aria-hidden="true"><path class="line"/><path class="head"/></svg>
 </main>
+<script>
+(function () {
+  var page = document.querySelector('.page');
+  var svg = page.querySelector('.cta-arrow');
+  var line = svg.querySelector('.line'), head = svg.querySelector('.head');
+  var steps = page.querySelectorAll('.agenda .step');
+  var last = steps[steps.length - 1];
+  var link = page.querySelector('.cta a');
+  if (!last || !link) return;
+  var shown = false;
+
+  function draw() {
+    var P = page.getBoundingClientRect();
+    var num = last.querySelector('.num');
+    var mobile = num && getComputedStyle(num).display !== 'none';
+    var from = (mobile ? num : last).getBoundingClientRect();
+    var to = link.getClientRects()[0];
+    var sx = from.left + from.width / 2 - P.left;
+    var sy = from.bottom - P.top + (mobile ? 4 : 10);
+    var ty = to.top + to.height / 2 - P.top;
+    var dir = (to.left - P.left) > sx ? 1 : -1;
+    var ex = (dir > 0 ? to.left - P.left - 8 : to.right - P.left + 10);
+    var r = Math.max(0, Math.min(24, ty - sy, Math.abs(ex - sx) - 6));
+    var d = 'M' + sx + ' ' + sy + ' V' + (ty - r) +
+            ' Q' + sx + ' ' + ty + ' ' + (sx + dir * r) + ' ' + ty + ' H' + ex;
+    var h = 9;
+    svg.setAttribute('width', P.width);
+    svg.setAttribute('height', P.height);
+    line.setAttribute('d', d);
+    head.setAttribute('d', 'M' + (ex - dir * h) + ' ' + (ty - h) + ' L' + ex + ' ' + ty + ' L' + (ex - dir * h) + ' ' + (ty + h));
+    if (!shown) {
+      var len = line.getTotalLength();
+      line.style.strokeDasharray = len;
+      line.style.strokeDashoffset = len;
+      head.style.opacity = 0;
+    }
+  }
+  function reveal() {
+    if (shown) return;
+    shown = true;
+    svg.classList.add('draw');
+    line.style.strokeDashoffset = 0;
+    head.style.opacity = 1;
+    setTimeout(function () { line.style.strokeDasharray = 'none'; }, 1200);
+  }
+
+  draw();
+  if (document.fonts) document.fonts.ready.then(draw);
+  window.addEventListener('resize', draw);
+  if ('ResizeObserver' in window) new ResizeObserver(draw).observe(page);
+
+  var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (still || !('IntersectionObserver' in window)) { svg.classList.remove('draw'); reveal(); return; }
+  var io = new IntersectionObserver(function (es) {
+    if (es[0].isIntersecting) { reveal(); io.disconnect(); }
+  }, { threshold: 0.6 });
+  io.observe(link);
+})();
+</script>
 </body>
 </html>
