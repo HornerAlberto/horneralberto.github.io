@@ -65,6 +65,17 @@ body { background: #fff; color: var(--ink); font-family: var(--sans); line-heigh
   color: var(--soft);
 }
 .eyebrow .dot { margin: 0 .9em; }
+.intro {
+  border-left: 3px solid var(--ink);
+  padding: calc(.2 * var(--u)) 0 calc(.2 * var(--u)) calc(1.2 * var(--u));
+  margin-bottom: calc(2.4 * var(--u));
+  max-width: calc(72 * var(--u));
+}
+.intro p {
+  font-size: max(13px, calc(1.2 * var(--u)));
+  line-height: 1.5;
+  color: #333;
+}
 h1 {
   font-family: var(--serif);
   font-weight: 700;
@@ -203,6 +214,8 @@ h2 {
   .icon-d { display: none; }
   .icon-m { display: block; }
 
+  .intro { margin: 0; max-width: none; border-left: 0; border-bottom: 1px solid #e2e2e2; padding: 22px 26px; background: #f7f7f7; }
+  .intro p { font-size: 15px; line-height: 1.55; color: #333; }
   .hero { background: #1c1c1c; color: #fff; padding: 46px 26px 30px; }
   .eyebrow {
     font-family: inherit;
@@ -287,6 +300,9 @@ h2 {
 </head>
 <body>
 <main class="page">
+  <aside class="intro">
+    <p>Como mexicanos, es importante conocer la situación de nuestro país respecto de la protección e infraestructura digital para informar nuestro voto y nuestras contribuciones a la democracia. Esta es una propuesta, dada la situación, para los funcionari@s públic@s que tomen cargos el siguiente año.</p>
+  </aside>
   <header class="hero">
     <p class="eyebrow"><span class="e1">Propuesta para el gobierno entrante</span><span class="dot">·</span><span class="e2">Ciberseguridad</span></p>
     <h1>Un solo atacante con IA vulneró<br> 9 instituciones en<br> 7 semanas</h1>
@@ -365,7 +381,7 @@ h2 {
   </div>
 
   <footer class="source">
-    <p class="cta">¿Quieres conocer todos los detalles?<br> <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">Lee aquí el reporte técnico completo</a></p>
+    <p class="cta">¿Quieres conocer todos los detalles sobre la vulnerabilidad de los sistemas digitales en México?<br> <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">Lee aquí el reporte técnico completo</a></p>
     <p>Fuente: Gambit Security, <a href="https://gambit.security/blog-posts/a-single-operator-two-ai-platforms-nine-government-agencies-the-full-technical-report" target="_blank" rel="noopener">“The AI-Assisted Breach of Mexico’s Government Infrastructure”</a>, feb.&nbsp;2026. Campaña documentada: dic.&nbsp;2025 – feb.&nbsp;2026.</p>
     <p>Cifras del reporte, sin verificación independiente; SAT, INE y Gobierno de Jalisco negaron públicamente haber sido vulnerados.</p>
     <p>Gracias a mi colega Diego por compartirme este reporte.</p>
